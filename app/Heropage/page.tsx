@@ -1,8 +1,7 @@
 "use client"
-
-import "../HeroPage/heroPage.css"
 import Link from "next/link";
 import Image from "next/image";
+import "../Heropage/heroPage.css"
 
 
 function HeroPage() {
