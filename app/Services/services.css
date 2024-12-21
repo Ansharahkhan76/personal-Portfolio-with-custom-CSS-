@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Section Heading */
+  .section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    color: black;
+    margin-bottom: 30px;
+  }
+  
+  .section-heading span {
+    color: #333;
+  }
+  
+  /* Grid Layout */
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  @media (min-width: 600px) {
+    .service-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .service-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Service Item */
+  .service-item {
+    background-color: #2d3748; /* Dark Gray */
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .service-item:hover {
+    background-color: #4a5568; /* Slightly lighter Gray */
+  }
+  
+  .service-item .icon {
+    font-size: 44px;
+    color: #5a67d8; /* Indigo Color */
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 1rem;
+    color: #e2e8f0; /* Light Gray */
+  }
+  
+  /* Service Item Button */
+  .service-btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5a67d8;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .service-btn:hover {
+    background-color: #4c51bf;
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 640px) {
+    .service-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .service-item p {
+      font-size: 0.9rem;
+    }
+  }
+  
